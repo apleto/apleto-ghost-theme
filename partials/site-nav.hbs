@@ -1,0 +1,15 @@
+    <nav {{#is "index,page, post, author, tag"}}class="context-dark bg-image" style="background: #313030;"{{/is}}>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div class="logo">
+        {{#if @site.logo}}
+            <img src="{{@site.logo}}" alt="{{@site.title}}" style="max-height: 40px;" />
+        {{else}}
+            {{@site.title}}
+        {{/if}}
+      </div>
+      <div class="menu">
+        {{ navigation }}
+      </div>
+    </nav>

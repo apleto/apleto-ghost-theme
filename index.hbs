@@ -1,0 +1,20 @@
+{{!< default}}
+
+
+<div class="row row-30">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                asdf
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8">
+        {{#foreach posts}}
+
+            {{> "card"}} {{!-- partials/card.hbs --}}
+
+        {{/foreach}}
+    </div>
+</div>
